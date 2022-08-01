@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Tokenomic;
+
+class Category extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+      'name',
+      'adress',
+      'raund',
+      'blocked',
+      'unblocked',
+    ];
+
+    public function tokenomic() {
+      return $this->hasOne(Tokenomic::class);
+    }
+}

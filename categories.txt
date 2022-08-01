@@ -1,0 +1,2 @@
+INSERT INTO categories (name, adress, raund, blocked, unblocked)
+VALUES ('potatoes', '/potatoes', '2', '4', '6');

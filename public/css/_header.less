@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background: @black1;
+  margin-bottom: 15px;
+
+
+  .headItem {
+    display: flex;
+    color: @fCC;
+
+
+    .img {
+      background: url('1.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 80px;
+    }
+
+    &:nth-child(even) {
+      padding-top: 30px;
+    }
+
+    &-button {
+      background: @fCT;
+      padding: 5px;
+      margin: 20px;
+      margin-right: 0;
+    }
+
+    &-lang {
+      background: @black1;
+      padding: 5px;
+      margin: 20px;
+      color: @fCT;
+      margin-right: 10px;
+    }
+  }
+}

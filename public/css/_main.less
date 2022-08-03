@@ -1,0 +1,138 @@
+#charts {
+  display: flex;
+  margin: 5px 0;
+
+  #chart1 {
+    width: 60%;
+    background-color: @black1;
+    margin-right: 1%;
+    border-radius: 10px;
+  }
+
+  #chart2 {
+    width: 39%;
+    background-color: @black1;
+    border-radius: 10px;
+  }
+}
+
+#info {
+  display: flex;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: @black1;
+    width: 25%;
+    margin: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+
+    .title {
+      color: @fCT;
+      border-bottom: 2px solid @black2;
+      padding-bottom: 5px;
+    }
+
+    .content {
+      color: @fCC;
+      padding-top: 5px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  margin-bottom: 5px;
+  background: @black1;
+  color: @fCC;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+  background: @black1;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+
+  tr {
+    border-bottom: 2px solid @black2;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  th {
+    color: @fCT;
+  }
+
+  td {
+    width: 15%;
+    text-align: center;
+    color: @fCC;
+  }
+
+  td {
+
+    &:first-child {
+      width: 20%;
+    }
+
+    &:last-child {
+      width: 20%;
+    }
+  }
+}
+
+#block {
+  display: flex;
+
+  #qr {
+    width: 220px;
+    background: @black2;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+  }
+
+  #info2 {
+    width: 240px;
+    height: 120px;
+    background: @black2;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 60px;
+
+    .info2 {
+      width: 110px;
+      margin: 5px;
+
+      &-one {
+        .title2 {
+          color: @fCT;
+        }
+
+        .content2 {
+          color: @fCC;
+        }
+      }
+    }
+
+  }
+
+}

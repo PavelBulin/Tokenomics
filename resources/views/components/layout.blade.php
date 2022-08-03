@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      /* body {background: #333; color: #fff;} */
-      .red { color: red; }
-      .green { color: green; }
-      .blue { color: blue; }
-      table { border-collapse: collapse; }
-      th, td { padding: 3px; border: 1px solid black; }
-      /* input {width: 30px;} */
-    </style>
-	</head>
-	<body>
-  {{ $slot }}
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="container">
+
+      <x-header />
+
+      <main>
+        {{ $slot }}
+      </main>
+
+      <x-footer />
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+  <script src="/js/chart.js"></script>
+</body>
 </html>

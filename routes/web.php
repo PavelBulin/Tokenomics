@@ -22,7 +22,8 @@ Route::get('/admin/msg', function () {
   Route::post('/admin/create', [AdminController::class, 'createTokenomic'])->name('create');
   Route::post('/admin/change', [AdminController::class, 'changeTokenomic'])->name('change');
   Route::post('/admin/upload', [DataController::class, 'uploadData'])->name('upload');
-  Route::get('/address/{address?}', [AdminController::class, 'showCategory'])->name('address');
+  // Route::get('/address/{address?}', [AdminController::class, 'showCategory'])->name('address');
+  Route::get('/address/{address?}', [AdminController::class, 'showAddress'])->name('address');
 
   Route::view('/admin/msg', 'msg')->name('msg');
 

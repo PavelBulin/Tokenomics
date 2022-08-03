@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Validator;
@@ -21,7 +20,7 @@ class DataController extends Controller
 
       // dd($request->all());
       Excel::import(new DataImport, $request->file);
-// dd();
+
       return redirect()->route('user.admin');
       return redirect()->route('user.admin')->with('success', 'Данные загружены успешно');
     }

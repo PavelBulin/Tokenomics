@@ -18,7 +18,6 @@ class DataController extends Controller
     public function uploadData(Request $request)
     {
 
-      // dd($request->all());
       Excel::import(new DataImport, $request->file);
 
       return redirect()->route('user.admin');

@@ -87,7 +87,6 @@
                   let select = D.querySelector(`#${dataCell}`);
 
                   select.addEventListener('change', function () {
-                    // rQty++;
                     console.log(rQty);
 
                     let restPer = (100 - lSum - select.value) / rQty;

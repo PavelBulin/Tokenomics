@@ -9,15 +9,6 @@ class Data extends Model
 {
     use HasFactory;
 
-  //   protected $fillable = [
-  //     'name',
-  //     'globalPercent',
-  //     'adress',
-  //     'raund',
-  //     'blocked',
-  //     'unblocked',
-  // ];
-
   protected $fillable = [
     'address', 'raund',
     'blocked', 'unlocked',

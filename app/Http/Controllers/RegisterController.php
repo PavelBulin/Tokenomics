@@ -1,5 +1,4 @@
 <?php
-// №1 #controller #regist #auth #login
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;

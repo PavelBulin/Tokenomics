@@ -8,7 +8,6 @@ use Socialite;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-// use laravel\Socialite\Facades\Socialite;
 
 class SocialController extends Controller
 {
@@ -45,8 +44,7 @@ class SocialController extends Controller
         return redirect('admin');
       }
     } catch (Exception $exception) {
-      // dd($exception->getMessage("Не удалось авторизоваться"));
-      dd("Не удалось авторизоваться");
+            dd("Не удалось авторизоваться");
     }
   }
 }

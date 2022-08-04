@@ -1,11 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
-
-=======
->>>>>>> 0675f0c2a7668aba4b98b7b56d08c3bb687f1eb0
+add class DB in DatabaaseSeeder.php
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
